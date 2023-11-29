@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.1.2a (2023-11-28)
+- **♻️:** Re-organized directory structure for Components
+- **➕:** Snowball image
+- **➕:** Second snowball image
+- **🚀:** increased snowfall visual with new images
+
 ## v0.1.1a (2023-10-15)
 - **🛠️:** Missing `id="root"` in `index.html`
 - **➕:** Snowfall affect to ComingSoon page

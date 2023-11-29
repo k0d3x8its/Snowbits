@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
-import ComingSoon from './assets/Components/ComingSoon'
+import ComingSoon from './Components/ComingSoon'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (

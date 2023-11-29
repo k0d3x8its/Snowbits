@@ -8,8 +8,8 @@
 - **ADDED➕:** Avalanche logo image
 
 ## v0.1.0a (2023-09-07)
-- **ADDED:** React via Vite
-- **REMOVED:** Irrelevant files & Images
-- **ADDED:** TailwindCSS 
-- **ADDED:** React-Snowfall library
-- **ADDED:** ComingSoon page
+- **ADDED➕:** React via Vite
+- **REMOVED❌:** Irrelevant files & Images
+- **ADDED➕:** TailwindCSS 
+- **ADDED➕:** React-Snowfall library
+- **ADDED➕:** ComingSoon page

@@ -1,16 +1,21 @@
 # Changelog
 
-## v0.1.2a (2023-11-28)
+## v0.1.1a (2023-11-29)
+- **➕:** Avalanche-red hex color
+- **➕:** Flex display and direction for CSS main div in App.jsx to develop footer
+- **➕:** TradingView marquee ticker for Avalanche data
+
+## v0.1.1a (2023-11-28)
 - **♻️:** Re-organized directory structure for Components
 - **➕:** Snowball image
 - **➕:** Second snowball image
-- **🚀:** increased snowfall visual with new images
+- **🚀:** Increased snowfall visual with new images
 
 ## v0.1.1a (2023-10-15)
 - **🛠️:** Missing `id="root"` in `index.html`
 - **➕:** Snowfall affect to ComingSoon page
 - **❌:** html file from TailwindCSS config file
-- **➕:** snowflake image
+- **➕:** Snowflake image
 - **➕:** Avalanche logo image
 
 ## v0.1.0a (2023-09-07)

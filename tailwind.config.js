@@ -5,7 +5,11 @@ export default {
     './index.html',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'avax-red': '#E84142'
+      }
+    },
   },
   plugins: [],
 }

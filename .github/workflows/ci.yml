@@ -26,11 +26,7 @@ jobs:
         cache: 'npm'
 
     - name: 'Installing Dependencies'
-      run: |
-        cd /home/runner/work/Snowbits/Snowbits
-        npm install
+      run: 'npm install'
 
     - name: 'Running Tests'
-      run: |
-        cd /home/runner/work/Snowbits/Snowbits
-        npm test
+      run:  'npm test'

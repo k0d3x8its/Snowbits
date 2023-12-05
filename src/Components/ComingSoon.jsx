@@ -10,12 +10,12 @@ import Snowfall from 'react-snowfall';
 const snowflakeImage = document.createElement('img')
 snowflakeImage.src = 'src/assets/snowflake.png'
 
-/**************** Avalanche Logo ******************/
+/************** Avalanche Logo ********************/
 /************ and source of image *****************/
 const avaxflakeImage = document.createElement('img')
 avaxflakeImage.src = 'src/assets/avaxflake.png'
 
-/******************* Snowball *********************/
+/***************** Snowball ***********************/
 /************ and source of image *****************/
 const snowballImage = document.createElement('img')
 snowballImage.src = 'src/assets/snowball.png'
@@ -30,14 +30,25 @@ snowballFlakeImage.src = 'src/assets/snowballFlakes.png'
 /********** Images for Snowfall Effect ************/
 /**************************************************/
 
+/**************************************************/
+/************* Initializing Various ***************/
+/************ Snowflakes & Snowballs **************/
+/**************************************************/
 const snowflake = [snowflakeImage]
 const avaxflake = [avaxflakeImage]
 const snowball = [snowballImage]
 const snowballFlake = [snowballFlakeImage]
 
-const ComingSoon = () => {
+/**************************************************/
+/************* Powered By Avalanche ***************/
+/********************* Logo ***********************/
+/**************************************************/
+const poweredByAvalanche = document.createElement('img')
+poweredByAvalanche.src = 'src/assets/PoweredbyAvalanche.png'
 
-    const avaxHex = "#E84142"; // Avalanche Hexcode
+
+// Coming Soon function
+const ComingSoon = () => {   
 
 /**************************************************/    
 /**** UseEffect For TradingView Marquee Ticker ****/
@@ -108,19 +119,20 @@ const ComingSoon = () => {
 
     <>  
         <div>
-            <Snowfall snowflakeCount={600} zIndex={2} images={snowball} radius={[5,10]} />
-            <Snowfall snowflakeCount={50} zIndex={2} images={snowflake} radius={[5,18]} />
-            <Snowfall snowflakeCount={25} zIndex={2} images={avaxflake} radius={[7,20]} />
-            <Snowfall snowflakeCount={300} zIndex={2} images={snowballFlake} radius={[5,10]} />
+            <Snowfall snowflakeCount={600} zIndex={11} images={snowball} radius={[5,10]} />
+            <Snowfall snowflakeCount={50} zIndex={11} images={snowflake} radius={[5,18]} />
+            <Snowfall snowflakeCount={25} zIndex={11} images={avaxflake} radius={[7,20]} />
+            <Snowfall snowflakeCount={300} zIndex={11} images={snowballFlake} radius={[5,10]} />
         </div>
 
         <div id="tradingview-widget-container" />
 
-        <footer className="bg-avax-red p-20">
-            <div className="text-right">
-                <p>
-                    footer
-                </p>
+        <footer className="bg-avax-red p-10">
+            <div className="flex justify-between items-center">
+
+                <div className="ml-auto max-w-[200px]">
+                    <img src={poweredByAvalanche.src} alt="Powered By Avalanche" className="w-full h-auto"/>
+                </div>   
             </div>
         </footer>
     </>

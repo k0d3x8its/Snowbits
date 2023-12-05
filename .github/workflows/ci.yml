@@ -2,7 +2,7 @@ name: Continuous Integration Workflow
 
 on:
   push:
-    branches: [ "master", "develop" ]
+    branches: [ "develop" ]
   pull_request:
     branches: [ "master" ]
 
@@ -13,7 +13,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [16.x, 18.x]
+        node-version: [14x, 16.x, 18.x]
 
     steps:
     - name: 'Checkout repository'

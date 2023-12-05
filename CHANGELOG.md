@@ -1,5 +1,9 @@
 # Changelog
 
+## v0.1.1a (2023-12-04)
+- **➕:** "Powered by Avalanche" .PNG 
+- **♻️:** Avalanche .PNG placed in footer
+
 ## v0.1.1a (2023-11-29)
 - **➕:** Avalanche-red hex color
 - **➕:** Flex display and direction for CSS main div in App.jsx to develop footer

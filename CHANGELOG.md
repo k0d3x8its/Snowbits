@@ -13,7 +13,7 @@
 
 ## v0.1.1a (2023-10-15)
 - **🛠️:** Missing `id="root"` in `index.html`
-- **➕:** Snowfall affect to ComingSoon page
+- **➕:** Snowfall effect to ComingSoon page
 - **❌:** html file from TailwindCSS config file
 - **➕:** Snowflake image
 - **➕:** Avalanche logo image

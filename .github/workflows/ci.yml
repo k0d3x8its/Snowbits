@@ -24,6 +24,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+      timeout-minutes: 5
 
     - name: 'Installing Dependencies'
       run: 'npm install'

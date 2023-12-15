@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Snowfall from 'react-snowfall';
+import ProgressBar from './ProgressBar';
 
 /**************************************************/
 /********** Images for Snowfall Effect ***********/
@@ -54,8 +55,10 @@ const ComingSoon = () => {
 /**** UseEffect For TradingView Marquee Ticker ****/
 /**************************************************/
     useEffect(() => {
+        //Creating a new script element
         const script = document.createElement('script');
     
+        //Set script properties
         script.type = 'text/javascript';
         script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
         script.async = true;
@@ -102,9 +105,10 @@ const ComingSoon = () => {
                 "locale": "en"
             }
         `;
-    
+        //Appending the script to the tradingview-widget-container element
         document.getElementById('tradingview-widget-container').appendChild(script);
-    
+        
+        //Cleanup function to remove the script when the component unmounts
         return () => {
             document.getElementById('tradingview-widget-container').removeChild(script);
         };
@@ -117,6 +121,9 @@ const ComingSoon = () => {
 
     return(
 
+// This the fragment that holds the snowfall effect 
+// as well as the marquee container that sits on the
+// footer which houses the Avalanche logo
     <>  
         <div>
             <Snowfall snowflakeCount={600} zIndex={11} images={snowball} radius={[5,10]} />
@@ -124,12 +131,15 @@ const ComingSoon = () => {
             <Snowfall snowflakeCount={25} zIndex={11} images={avaxflake} radius={[7,20]} />
             <Snowfall snowflakeCount={300} zIndex={11} images={snowballFlake} radius={[5,10]} />
         </div>
+        <main className="flex-grow">
+            <ProgressBar targetPercentage={10} />
+        </main>
 
         <div id="tradingview-widget-container" />
 
-        <footer className="bg-avax-red p-10">
+        <footer className="bg-avax-red pb-10 flex flex-col p-10 mt-auto">
             <div className="flex justify-between items-center">
-
+                
                 <div className="ml-auto max-w-[200px]">
                     <img src={poweredByAvalanche.src} alt="Powered By Avalanche" className="w-full h-auto"/>
                 </div>   

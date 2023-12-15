@@ -19,7 +19,7 @@
 - **♻️:** Re-organized directory structure for Components
 - **➕:** Snowball image
 - **➕:** Second snowball image
-- **🚀:** Increased snowfall visual with new images
+- **🚀:** snowfall visual with new images
 
 ## v0.1.1a (2023-10-15)
 - **🛠️:** Missing `id="root"` in `index.html`

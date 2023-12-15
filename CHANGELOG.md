@@ -5,7 +5,6 @@
 - **➕:** progress bar to display how far along the project is coming
 - **➕:** avaxflakeCircuit PNG
 - **➕:** headshot of a K0d3x TARS
-- 
 
 ## v0.1.1a (2023-12-04)
 - **➕:** "Powered by Avalanche" .PNG 

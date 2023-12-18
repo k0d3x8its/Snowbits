@@ -27,7 +27,7 @@ jobs:
       timeout-minutes: 5
 
     - name: 'Installing Dependencies'
-      run: 'npm install'
+      run: 'npm ci'
 
     - name: 'Running Tests'
       run:  'npm test'

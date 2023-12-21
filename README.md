@@ -9,4 +9,4 @@
     <img alt="NodeJS" src="https://img.shields.io/badge/NodeJS-v20.9.0-green?&logo=nodedotjs">
 </div>
 </br>
-A simple dApp that allows one wallet to send Avax to another wallet with a message minted to the blockchain along with a meme attached to the transaction on the dApp.
+A simple dApp that allows one wallet to send AVAX to another wallet with a message minted to the blockchain along with a meme attached to the transaction on the dApp.

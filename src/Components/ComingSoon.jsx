@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Snowfall from 'react-snowfall';
 import ProgressBar from './ProgressBar';
+import avaxflakeCircuit from '../assets/avaxflakeCircuit.png'
 
 /**************************************************/
 /********** Images for Snowfall Effect ***********/
@@ -46,7 +47,17 @@ const snowballFlake = [snowballFlakeImage]
 /**************************************************/
 const poweredByAvalanche = document.createElement('img')
 poweredByAvalanche.src = 'src/assets/PoweredbyAvalanche.png'
+/************ End Of Avalanche Logo ***************/
+/**************************************************/
 
+/**************************************************/
+/*************** K0d3x Character ******************/
+/******************* Sticker **********************/
+/**************************************************/
+const k0d3xSticker = document.createElement('img')
+k0d3xSticker.src = 'src/assets/k0d3x.png'
+/************ End Of K0d3x Sticker ****************/
+/**************************************************/
 
 // Coming Soon function
 const ComingSoon = () => {   
@@ -131,15 +142,32 @@ const ComingSoon = () => {
             <Snowfall snowflakeCount={25} zIndex={11} images={avaxflake} radius={[7,20]} />
             <Snowfall snowflakeCount={300} zIndex={11} images={snowballFlake} radius={[5,10]} />
         </div>
+        
+        <div>
+        <img 
+          src={avaxflakeCircuit} 
+          alt="avaxflake cicruit"
+          className="object-contain sm:h-48 w-48 mx-auto" 
+        />
+      </div>
         <main className="flex-grow">
             <ProgressBar targetPercentage={10} />
         </main>
 
-        <div id="tradingview-widget-container" />
-
-        <footer className="bg-avax-red pb-10 flex flex-col p-10 mt-auto">
-            <div className="flex justify-between items-center">
-                
+        <div id="tradingview-widget-container" className=""/>
+        
+        <footer className="bg-avax-red flex flex-between mt-auto">
+            <div className="flex mb-auto shadow-[1px_1px_1px_1px_rgba(102,11,11,0.2)] rounded">
+                <div className=" flex rounded m-1 p-1 bg-red-800 shadow-inner">
+                    <p className="mt-2">
+                        Made with 🫀 by a 
+                        security TARS named k0d3x
+                    </p>
+                    
+                </div>
+            </div>
+            <div className="flex-grow" />
+            <div className="flex justify-center items-center p-8">
                 <div className="ml-auto max-w-[200px]">
                     <img src={poweredByAvalanche.src} alt="Powered By Avalanche" className="w-full h-auto"/>
                 </div>   

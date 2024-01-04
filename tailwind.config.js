@@ -6,10 +6,13 @@ export default {
   ],
   theme: {
     extend: {
+      minHeight: {
+        'screen': '100vh'
+      },
       colors: {
         'avax-red': '#E84142',
-        'grad-red': 'F11D1F',
-        'grad-blue': '6E87E3'
+        'grad-red': '#F11D1F',
+        'grad-blue': '#6E87E3'
       }
     },
   },

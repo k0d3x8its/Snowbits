@@ -70,7 +70,7 @@ const ComingSoon = () => {
         //Creating a new script element
         const script = document.createElement('script');
     
-        //Set script properties
+        //Setting script properties
         script.type = 'text/javascript';
         script.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
         script.async = true;
@@ -132,7 +132,6 @@ const ComingSoon = () => {
 /**************************************************/
 
     return(
-
 <>  
 { 
 /*************************************************/
@@ -247,7 +246,7 @@ const ComingSoon = () => {
     <div className="flex justify-center items-center p-8">
         <div className="ml-auto max-w-[200px]">
 
-            {/* Powered by Avalanche logo */}
+            {/* Powered by Avalanche logo/link */}
             <a href="https://www.avax.network/" target="_blank">
                 <img src={poweredByAvalanche.src} alt="Powered By Avalanche" className="w-full h-auto"/>
             </a>

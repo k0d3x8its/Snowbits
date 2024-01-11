@@ -35,5 +35,5 @@ jobs:
       run: 'npm ci'
 
     # Step 4: Setup to build project for production
-    - name: 🛠️ Build Project
+    - name: 🛠️ Building Project
       run: 'npm run build'

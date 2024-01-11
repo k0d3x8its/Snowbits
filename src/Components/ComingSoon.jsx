@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import Snowfall from 'react-snowfall';
 import ProgressBar from './ProgressBar';
 import avaxflakeCircuit from '../assets/avaxflakeCircuit.png'
+import DonateButton from './DonateButton';
 
 /**************************************************/
 /********** Images for Snowfall Effect ***********/
@@ -131,7 +132,6 @@ const ComingSoon = () => {
 /**************************************************/
 
     return(
-
 // This the fragment that holds the snowfall effect 
 // as well as the marquee container that sits on the
 // footer which houses the Avalanche logo
@@ -154,35 +154,19 @@ const ComingSoon = () => {
 
         <div id="tradingview-widget-container" />
         
-        <footer className="bg-avax-red flex flex-between mt-auto">
+        <footer className="bg-avax-red flex flex-between mt-auto h-auto">
             <div className="flex mb-auto shadow-[1px_1px_2px_1px_rgba(102,11,11,0.2)] rounded h-auto">
                 <div className=" flex rounded m-1 p-1 bg-red-800 shadow-inner">
                     <p className="mb-1 tracking-tight text-black">
                         Made with 🫀 by a TARS named k0d3x
                         <br />
                         <div className="flex flex-wrap gap-1 items-center justify-center">
-                        <a href="" target="_blank">
-                            <button 
-                                className="rounded border-black px-3 max-w-full
-                                flex items-center text-center bg-avax-red transition-transform 
-                                transform hover:scale-105 hover:bg-red-600 active:scale-100 
-                                focus:outline-none focus:ring focus:border-avax-red 
-                                bg-gradient-to-r from-grad-blue to-grad-red 
-                                hover:from-grad-red hover:to-grad-blue"
-                            >
-                            <img 
-                                src="src/assets/k0d3x.png" 
-                                alt="K0d3x 8its" 
-                                className="h-10 w-10 mr-1 mt-0.5" 
-                            />
-                            <p className="whitespace-pre-wrap">Donate</p>
-                        </button>
-                        </a>
+                        <DonateButton />
                         <a href="https://ref.avvy.domains/k0d3x.avax" target="_blank" >
                             <button 
-                                className="rounded border-black px-3 
-                                flex items-center bg-white transition-transform 
-                                transform hover:scale-105 hover:bg-gray-400 active:scale-100 
+                                className="rounded px-3 flex items-center 
+                                bg-white transition-transform transform 
+                                hover:scale-105 hover:bg-gray-400 active:scale-100 
                                 focus:outline-none focus:ring focus:border-avax-red 
                                 bg-gradient-to-r from-white to-gray-400 
                                 hover:from-gray-400 hover:to-white"
@@ -190,7 +174,7 @@ const ComingSoon = () => {
                                 <img 
                                     src="src/assets/avvyLogo.svg" 
                                     alt="Avvy Domains" 
-                                    className="h-10 w-10 mr-1 mt-0.5" 
+                                    className="h-10 w-10 mr-1 mt-1 mb-1" 
                                 />
                                 <p>Domains</p>
                             </button>
@@ -210,6 +194,7 @@ const ComingSoon = () => {
             </div>
         </footer>
     </>
+    
     );
 };
 

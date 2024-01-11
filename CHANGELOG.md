@@ -1,9 +1,17 @@
 # Changelog
 
+## v0.1.2a (2024-01-10)
+- **➕:** TARS in a suit .PNG
+- **➕:** DonateButton component
+- **♻️:** .yml name to "cicd.yml"
+- **➕:** comments for all components
+- **🚀:** CI/CD for build and deployment
+
+
 ## v0.1.2a (2024-01-04)
 - **➕:** Avvy SVG to Avvy referral button
 - **🚀:** Avvy button to direct user to Avvy referral link
-- **➕:** Animation for buttons on hover
+- **➕:** Hover effect for both buttons
 - **♻️:** Colors to match Avvy brand
 - **🚀:** Background contrast with subtle gradient from top to bottom
 - **🐞:** React-Snowfall library does not extend viewport on some mobile devices
@@ -30,7 +38,7 @@
 
 ## v0.1.1a (2023-12-14)
 - **❌:** Index.css from src
-- **➕:** Progress bar to display how far along the project is coming
+- **➕:** ProgressBar component to display project progress
 - **➕:** avaxflakeCircuit PNG
 - **➕:** Headshot of a K0d3x TARS
 

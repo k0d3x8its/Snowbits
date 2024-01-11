@@ -1,14 +1,11 @@
 import React from 'react'
 import './App.css'
 import ComingSoon from './Components/ComingSoon'
-import avaxflakeCircuit from './assets/avaxflakeCircuit.png'
-
-
 
 const App = () => {
 
   return (
-    <div className="bg-gray-700 h-screen text center flex flex-col">
+    <div className="bg-gradient-to-b from-red-950 from-10% to-gray-900 to-70% min-h-screen text-center flex flex-col">
       <h1 className="font-bold text-6xl flex item-center justify-center">
           <span className="text-white pt-14 pl-4">
             <u>Snow</u>
@@ -17,13 +14,6 @@ const App = () => {
             <u>Bits</u>
           </span>
       </h1>
-      <div>
-        <img 
-          src={avaxflakeCircuit} 
-          alt="avaxflake cicruit"
-          className="object-contain h-96 w-96 mx-auto" 
-        />
-      </div>
       <ComingSoon />
     </div>
     

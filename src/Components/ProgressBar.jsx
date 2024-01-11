@@ -5,7 +5,9 @@ const ProgressBar = ({ targetPercentage }) => {
   // State to track the current progress
   const [progress, setProgress] = useState(0);
 
-  // useEffect to handle the animation of the progress bar
+  /****************************************/
+   /* useEffect to handle the animation */
+  /****************************************/
   useEffect(() => {
     // Set the duration of the animation in milliseconds
     const duration = 100000;
@@ -19,7 +21,9 @@ const ProgressBar = ({ targetPercentage }) => {
     // Variable to keep track of the frame count
     let frameCount = 0;
 
-    // Function to animate the progress bar
+    /****************************************/
+    /* Function to animate the progress bar */
+    /****************************************/
     const animateProgress = () => {
       setProgress((prevProgress) => {
         // Calculate the new progress based on the increment
@@ -36,6 +40,10 @@ const ProgressBar = ({ targetPercentage }) => {
             })();
       });
     };
+    /****************************************/
+    /*************** END OF *****************/
+    /* Function to animate the progress bar */
+    /****************************************/
 
     // Start the animation by calling animateProgress
     requestAnimationFrame(animateProgress);
@@ -43,6 +51,10 @@ const ProgressBar = ({ targetPercentage }) => {
     // Cleanup function to cancel the animation frame when the component unmounts
     return () => cancelAnimationFrame(frameCount);
   }, [targetPercentage, progress]);
+  /****************************************/
+   /************** END OF ***************/
+   /* useEffect to handle the animation */
+  /****************************************/
 
   // Render the progress bar with the current progress percentage
   return (

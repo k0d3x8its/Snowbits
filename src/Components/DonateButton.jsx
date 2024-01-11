@@ -7,20 +7,25 @@ const DonateButton = () => {
 
   // Function to handle the click event on the copy button
   const handleCopyClick = async () => {
-    // Mock wallet address for illustration purposes
+
+    // contstant to hold the wallet address to be copied
     const walletAddress = '0xDcC490ddF299d5c9f0cA13f39077DBE1370Ff81c';
 
     try {
       // Attempt to copy the wallet address to the clipboard
       await navigator.clipboard.writeText(walletAddress);
+
       // Set the copied state to true if successful
       setCopied(true);
     } catch (err) {
+
       // Log an error if copying to clipboard fails
       console.error('Unable to copy to clipboard', err);
+
       // Set the copied state to false
       setCopied(false);
     } finally {
+      
       // Reset the copied state after 3 seconds (3000 milliseconds)
       setTimeout(() => {
         setCopied(false);
@@ -31,7 +36,10 @@ const DonateButton = () => {
   // Render the DonateButton component
   return (
     <div className="flex items-center justify-center relative">
-      {/* Larger animated image that starts from the bottom and moves upwards */}
+      {
+       /* TARS in suit animates and moves upwards then appears to descend */
+       /* back into the button as if that is where it populated from */
+       }
       <img
         src="src/assets/k0d3xSuit.png"
         alt="K0d3x in a suit"
@@ -39,11 +47,12 @@ const DonateButton = () => {
           copied ? 'translate-y-100' : 'translate-y-100 opacity-0'
         }`}
         style={{ transition: 'opacity 0.5s ease-out' }}
-
-
       />
-
-      {/* Copy button with animation and 'Donate' or 'Address copied!' text */}
+      {
+        /*****************/
+        /* Donate Button */
+        /*****************/
+      }
       <button
         className="rounded border-black px-3 max-w-full
           flex items-center text-center bg-avax-red transition-transform 
@@ -54,16 +63,32 @@ const DonateButton = () => {
         onClick={handleCopyClick}
         title={copied ? 'Copied!' : '0xDcC490ddF299d5c9f0cA13f39077DBE1370Ff81c'}
       >
-        {/* Donate button icon */}
+        {
+          /**********************/
+          /* Donate Button Icon */
+          /**********************/
+        }
         <img 
           src="src/assets/k0d3x.png" 
           alt="K0d3x 8its" 
           className="h-12 w-12 mr-1 mt-0.5"  // Adjusted size to h-12 and w-12
           style={{ transition: 'opacity 0.2s ease-out', opacity: copied ? 0 : 1 }}
         />
+        {
+          /**********************/
+          /******* END OF *******/
+          /* Donate Button Icon */
+          /**********************/
+        }
         {/* Text indicating 'Donate' or 'Address copied!' based on the copied state */}
         <p>{copied ? <span>Address<br />copied!</span> : 'Donate'}</p>
       </button>
+      {
+        /*****************/
+        /**** END OF *****/
+        /* Donate Button */
+        /*****************/
+      }
     </div>
   );
 };

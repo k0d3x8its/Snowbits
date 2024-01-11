@@ -13,5 +13,5 @@ A simple dApp that allows wallet-to-wallet transfer of AVAX with a message minte
 ## Supported Browsers
 
 | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" /><br/>Firefox | <img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" /><br/>Chrome | <img src="https://bestwebbrowser.net/wp-content/uploads/2020/09/brave-logo.png" alt="Brave" width="24px" height="24px" /><br/>Brave |
-| --------- | --------- | --------- |
+| :---------: | :---------: | :---------: |
 | latest version| latest version | latest version | 

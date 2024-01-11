@@ -19,7 +19,7 @@ jobs:
     # Defines steps for the "build" job
     steps:
     # Step 1: Checkout the respository
-    - name: 🚚 Get Latest Code
+    - name: 🚚 Getting Latest Code
       uses: actions/checkout@v3
       
     # Step 2: Setup Node.js 

@@ -1,0 +1,39 @@
+name: Continuous Integration Workflow
+
+# Triggers the workflow on push events to the "develop" branch
+on:
+  push:
+    branches: [ "develop" ]
+
+# Defines a job named "test-project" that runs on the latest version of Ubuntu
+jobs:
+  test-project:
+    name: 🧪 Test Project
+    runs-on: ubuntu-latest
+
+    # Defines a matrix for Node.js versions to test against
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    # Defines steps for the "build" job
+    steps:
+    # Step 1: Checkout the respository
+    - name: 🚚 Get Latest Code
+      uses: actions/checkout@v3
+      
+    # Step 2: Setup Node.js 
+    - name: 🎛️ Using Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+      timeout-minutes: 5
+
+    # Step 3: Install project dependencies
+    - name: 🧰 Installing Dependencies
+      run: 'npm ci'
+
+    # Step 4: Setup to build project for production
+    - name: 🛠️ Build Project
+      run: 'npm run build'

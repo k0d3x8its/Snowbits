@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 // Define the ProgressBar component with a targetPercentage prop
 const ProgressBar = ({ targetPercentage }) => {
@@ -74,6 +75,11 @@ const ProgressBar = ({ targetPercentage }) => {
       </div>
     </div>
   );
+};
+
+// Prop validation for targetPercentage
+ProgressBar.propTypes = {
+  targetPercentage: PropTypes.number.isRequired
 };
 
 export default ProgressBar;

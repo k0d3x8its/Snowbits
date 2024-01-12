@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import Snowfall from 'react-snowfall';
 import ProgressBar from './ProgressBar';
 import avaxflakeCircuit from '../assets/avaxflakeCircuit.png'
@@ -190,7 +190,7 @@ const ComingSoon = () => {
                     <DonateButton />
 
                     {/* reference link for referral to Avvy Domains */}
-                    <a href="https://ref.avvy.domains/k0d3x.avax" target="_blank" >
+                    <a href="https://ref.avvy.domains/k0d3x.avax" target="_blank" rel="noopener noreferrer" >
 
                         {
                          /**********************************/
@@ -247,7 +247,7 @@ const ComingSoon = () => {
         <div className="ml-auto max-w-[200px]">
 
             {/* Powered by Avalanche logo/link */}
-            <a href="https://www.avax.network/" target="_blank">
+            <a href="https://www.avax.network/" target="_blank" rel="noopener noreferrer" >
                 <img src={poweredByAvalanche.src} alt="Powered By Avalanche" className="w-full h-auto"/>
             </a>
         </div>   

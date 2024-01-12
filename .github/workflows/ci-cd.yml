@@ -1,0 +1,50 @@
+name: CI/CD Workflow
+
+# Triggers the workflow on push events to the "master" branch
+on:
+  pull_request:
+    branches: master
+
+# Defines a job named "build-project" that runs on the latest version of Ubuntu
+jobs:
+  build-project:
+
+    name: 🚀 Deploy Project
+    runs-on: ubuntu-latest
+
+    # Defines a matrix for Node.js versions to test against
+    strategy:
+      matrix:
+        node-version: [18.x, 20.x]
+
+    # Defines steps for the "build-project" job
+    steps:
+    # Step 1: Checkout the respository
+    - name: 🚚 Getting Latest Code
+      uses: actions/checkout@v3
+      
+    # Step 2: Setup Node.js 
+    - name: 🎛️ Using Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm'
+      timeout-minutes: 5
+
+    # Step 3: Install project dependencies
+    - name: 🧰 Installing Dependencies
+      run: 'npm ci'
+
+    # Step 4: Setup to build project for production
+    - name: 🛠️ Building Project
+      run: 'npm run build'
+
+    # Step 5: Push build to master and deploy to host server
+    - name: 📤 Pushing Build
+      uses: k0d3x8its/Snowbits@master
+    env:
+      REPO: self
+      BRANCH: master # The branch name where you want to push the assets
+      FOLDER: dist # The directory where your assets are generated
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+      MESSAGE: "Build: ({sha}) {msg}" # The commit message

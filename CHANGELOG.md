@@ -1,12 +1,20 @@
 # Changelog
 
+## v0.1.2a (2024-01-11)
+- **♻️:** ci.yml to ci-dev.yml
+- **➕:** ci-cd.yml to workflows
+- **🚀:** ci.yml and ci-dev.yml for code analysis
+- **🛡️:** fixed security risk for older browsers
+- **➕:** deployment to ci-cd.yml
+- **❌:** irrelevant import in various files
+- **🚀:** ProgressBar component with props validation
+
 ## v0.1.2a (2024-01-10)
 - **➕:** TARS in a suit .PNG
 - **➕:** DonateButton component
 - **♻️:** .yml name to "cicd.yml"
 - **➕:** comments for all components
 - **🚀:** CI/CD for build and deployment
-
 
 ## v0.1.2a (2024-01-04)
 - **➕:** Avvy SVG to Avvy referral button

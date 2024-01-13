@@ -1,10 +1,10 @@
 # Changelog
 
-## v0.1.2a (2024-01-11)
+## v0.1.3a (2024-01-11)
 - **♻️:** ci.yml to ci-dev.yml
 - **➕:** ci-cd.yml to workflows
 - **🚀:** ci.yml and ci-dev.yml for code analysis
-- **🛡️:** fixed security risk for older browsers
+- **🛡️:** risk for older browsers patched
 - **➕:** deployment to ci-cd.yml
 - **❌:** irrelevant import in various files
 - **🚀:** ProgressBar component with props validation
@@ -48,7 +48,7 @@
 - **❌:** Index.css from src
 - **➕:** ProgressBar component to display project progress
 - **➕:** avaxflakeCircuit PNG
-- **➕:** Headshot of a K0d3x TARS
+- **➕:** Headshot of a TARS
 
 ## v0.1.1a (2023-12-04)
 - **➕:** "Powered by Avalanche" .PNG 
@@ -88,4 +88,5 @@
 **BUG** = 🐞 **|**
 **IMPROVED** = 🚀 **|**
 **CHANGED** = ♻️ **|**
-**SECURITY** = 🛡️ 
+**SECURITY** = 🛡️ **|**
+**DEPRECIATED** = ⚠️

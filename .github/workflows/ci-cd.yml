@@ -1,6 +1,6 @@
 name: CI/CD Workflow
 
-# Triggers the workflow on push events to the "master" branch
+# Triggers the workflow on push events and pull requests to the "master" branch
 on:
   push:
     branches: master
@@ -41,12 +41,12 @@ jobs:
     - name: 🛠️ Building Project
       run: 'npm run build'
 
-    # Step 5: Push build to master and deploy to host server
+    # Step 5: Push build to production and deploy to host server
     - name: 📤 Pushing Build
       uses: k0d3x8its/Snowbits@master
     env:
       REPO: self
-      BRANCH: master # The branch name where you want to push the assets
-      FOLDER: dist # The directory where your assets are generated
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
-      MESSAGE: "Build: ({sha}) {msg}" # The commit message
+      BRANCH: build # The branch name where where build will be pushed
+      FOLDER: dist # The directory where the build will be generated
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub automatically adds token
+      MESSAGE: "🛠️ Build: ({sha}) {msg}" # The commit message

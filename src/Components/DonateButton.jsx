@@ -61,7 +61,7 @@ const DonateButton = () => {
           bg-gradient-to-r from-grad-blue to-grad-red 
           hover:from-grad-red hover:to-grad-blue"
         onClick={handleCopyClick}
-        title={copied ? 'Copied!' : '0xDcC490ddF299d5c9f0cA13f39077DBE1370Ff81c'}
+        title={copied ? 'Copied!' : 'snowbits.avax'}
       >
         {
           /**********************/

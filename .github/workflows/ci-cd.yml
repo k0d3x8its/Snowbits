@@ -43,7 +43,7 @@ jobs:
 
     # Step 5: Push build to production and deploy to host server
     - name: 📤 Pushing Build
-      uses: k0d3x8its/Snowbits@master
+      uses: Snowbits/git-publish-subdir-action@master
     env:
       REPO: self
       BRANCH: build # The branch name where where build will be pushed

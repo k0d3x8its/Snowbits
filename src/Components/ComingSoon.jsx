@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 import Snowfall from 'react-snowfall';
 import ProgressBar from './ProgressBar';
-import avaxflakeCircuit from '../assets/avaxflakeCircuit.png'
+import avaxflakeCircuit from '../assets/avaxflakeCircuit.png';
+import poweredByAvalanche from '../assets/PoweredbyAvalanche.png';
+import avvyLogo from "../assets/avvyLogo.svg";
 import DonateButton from './DonateButton';
 
 /**************************************************/
@@ -41,24 +43,6 @@ const snowflake = [snowflakeImage]
 const avaxflake = [avaxflakeImage]
 const snowball = [snowballImage]
 const snowballFlake = [snowballFlakeImage]
-
-/**************************************************/
-/************* Powered By Avalanche ***************/
-/********************* Logo ***********************/
-/**************************************************/
-const poweredByAvalanche = document.createElement('img')
-poweredByAvalanche.src = 'src/assets/PoweredbyAvalanche.png'
-/************ End Of Avalanche Logo ***************/
-/**************************************************/
-
-/**************************************************/
-/*************** K0d3x Character ******************/
-/******************* Sticker **********************/
-/**************************************************/
-const k0d3xSticker = document.createElement('img')
-k0d3xSticker.src = 'src/assets/k0d3x.png'
-/************ End Of K0d3x Sticker ****************/
-/**************************************************/
 
 // Coming Soon function
 const ComingSoon = () => {   
@@ -207,7 +191,7 @@ const ComingSoon = () => {
                         >
                             {/* Avvy logo for button */}
                             <img 
-                                src="src/assets/avvyLogo.svg" 
+                                src={avvyLogo}
                                 alt="Avvy Domains" 
                                 className="h-10 w-10 mr-1 mt-1 mb-1" 
                             />
@@ -248,7 +232,7 @@ const ComingSoon = () => {
 
             {/* Powered by Avalanche logo/link */}
             <a href="https://www.avax.network/" target="_blank" rel="noopener noreferrer" >
-                <img src={poweredByAvalanche.src} alt="Powered By Avalanche" className="w-full h-auto"/>
+                <img src={poweredByAvalanche} alt="Powered By Avalanche" className="w-full h-auto"/>
             </a>
         </div>   
     </div>

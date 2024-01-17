@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import k0d3xSuit from '../assets/k0d3xSuit.png';
+import k0d3x from '../assets/k0d3x.png'
 
 // Define the DonateButton component
 const DonateButton = () => {
@@ -41,7 +43,7 @@ const DonateButton = () => {
        /* back into the button as if that is where it populated from */
        }
       <img
-        src="src/assets/k0d3xSuit.png"
+        src={k0d3xSuit}
         alt="K0d3x in a suit"
         className={`h-100 w-100 absolute bottom-0 transform ${
           copied ? 'translate-y-100' : 'translate-y-100 opacity-0'
@@ -69,7 +71,7 @@ const DonateButton = () => {
           /**********************/
         }
         <img 
-          src="src/assets/k0d3x.png" 
+          src={k0d3x} 
           alt="K0d3x 8its" 
           className="h-12 w-12 mr-1 mt-0.5"  // Adjusted size to h-12 and w-12
           style={{ transition: 'opacity 0.2s ease-out', opacity: copied ? 0 : 1 }}

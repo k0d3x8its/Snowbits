@@ -83,7 +83,7 @@ const DonateButton = () => {
           /**********************/
         }
         {/* Text indicating 'Donate' or 'Address copied!' based on the copied state */}
-        <p>{copied ? <span>Address<br />copied!</span> : 'Donate'}</p>
+        <p>{copied ? <span>Address<br />copied!</span> : 'Donat'}</p>
       </button>
       {
         /*****************/

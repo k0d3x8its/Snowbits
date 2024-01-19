@@ -45,8 +45,8 @@ jobs:
     - name: 📤 Pushing Build
       uses: s0/git-publish-subdir-action@develop
     env:
-      REPO: self
-      BRANCH: build # The branch name where where build will be pushed
+      REPO: self # The repository to push changes to
+      BRANCH: build # The branch name where build will be pushed
       FOLDER: dist # The directory where the build will be generated
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub automatically adds token
       MESSAGE: "🛠️ Build: ({sha}) {msg}" # The commit message

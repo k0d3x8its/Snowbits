@@ -10,7 +10,7 @@ const App = () => {
             <u>Snow</u>
           </span>
           <span className="text-avax-red pt-14">
-            <u>Bits</u>
+            <u>Bit</u>
           </span>
       </h1>
       <ComingSoon />

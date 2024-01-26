@@ -139,8 +139,8 @@ const ComingSoon = () => {
 <img 
     src={avaxflakeCircuit} 
     alt="avaxflake circuit"
-    className="object-contain h-96 w-96 mx-auto" 
-/>
+    className="object-contain mx-auto lg:h-96 lg:w-96 md:h-72 md:w-72 sm:h-64 sm:w-64" 
+/> 
 
 {/* Main content holding only the progress bar */}
 <main className="flex-grow">

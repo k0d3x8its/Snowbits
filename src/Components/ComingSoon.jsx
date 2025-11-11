@@ -1,13 +1,13 @@
 import { useEffect } from 'react';
 import Snowfall from 'react-snowfall';
 import ProgressBar from './ProgressBar';
-import avaxflakeCircuit from '../assets/avaxflakeCircuit.png';
-import poweredByAvalanche from '../assets/PoweredbyAvalanche.png';
-import avvyLogo from "../assets/avvyLogo.svg";
-import snowflakeAsset from '..assets/snowflake.png'
-import avaxflakeAsset from '..assets/avaxflake.png'
-import snowballAsset from '..assets/snowball.png'
-import snowballFlakesAsset from '..assets/snowballFlakes.png'
+import avaxflakeCircuit from '@assets/avaxflakeCircuit.png';
+import poweredByAvalanche from '@assets/PoweredbyAvalanche.png';
+import avvyLogo from '@assets/avvyLogo.svg';
+import snowflakeAsset from '@assets/snowflake.png'
+import avaxflakeAsset from '@assets/avaxflake.png'
+import snowballAsset from '@assets/snowball.png'
+import snowballFlakesAsset from '@assets/snowballFlakes.png'
 import DonateButton from './DonateButton';
 
 /**************************************************/
@@ -16,22 +16,22 @@ import DonateButton from './DonateButton';
 
 /**************** Snowflake ***********************/
 /************ and source of image *****************/
-const snowflakeImage = document.createElement('img')
+const snowflakeImage = document.createElement('img');
 snowflakeImage.src = snowflakeAsset;
 
 /************** Avalanche Logo ********************/
 /************ and source of image *****************/
-const avaxflakeImage = document.createElement('img')
+const avaxflakeImage = document.createElement('img');
 avaxflakeImage.src = avaxflakeAsset;
 
 /***************** Snowball ***********************/
 /************ and source of image *****************/
-const snowballImage = document.createElement('img')
+const snowballImage = document.createElement('img');
 snowballImage.src = snowballAsset;
 
 /*********** Snowball w/ Snowflakes ****************/
 /************ and source of image *****************/
-const snowballFlakeImage = document.createElement('img')
+const snowballFlakeImage = document.createElement('img');
 snowballFlakeImage.src = snowballFlakesAsset;
 
 /**************************************************/
@@ -253,4 +253,4 @@ const ComingSoon = () => {
   );
 };
 
-export default ComingSoon
+export default ComingSoon;

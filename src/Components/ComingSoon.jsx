@@ -148,7 +148,7 @@ const ComingSoon = () => {
 
       {/* Main content holding only the progress bar */}
       <main className="flex-grow">
-        <ProgressBar targetPercentage={10} />
+        <ProgressBar targetPercentage={40} />
       </main>
 
       {/* Container for TradingView widget */}

@@ -52,5 +52,5 @@ jobs:
       REPO: self # The repository to push changes to
       BRANCH: build # The branch name where build will be pushed
       FOLDER: dist # The directory where the build will be generated
-      GITHUB_TOKEN: ${{ secrets.K0D3X_KEY }} # GitHub automatically adds token
+      GITHUB_TOKEN: ${{ github.token }} # GitHub automatically adds token
       MESSAGE: "🛠️ Build: ({sha}) {msg}" # The commit message

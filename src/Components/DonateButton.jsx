@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import k0d3xSuit from '../assets/k0d3xSuit.png';
-import k0d3x from '../assets/k0d3x.png'
+import k0d3xSuit from '@assets/k0d3xSuit.png';
+import k0d3x from '@assets/k0d3x.png'
 
 // Define the DonateButton component
 const DonateButton = () => {
@@ -27,7 +27,7 @@ const DonateButton = () => {
       // Set the copied state to false
       setCopied(false);
     } finally {
-      
+
       // Reset the copied state after 3 seconds (3000 milliseconds)
       setTimeout(() => {
         setCopied(false);
@@ -39,15 +39,14 @@ const DonateButton = () => {
   return (
     <div className="flex items-center justify-center relative">
       {
-       /* TARS in suit animates and moves upwards then appears to descend */
-       /* back into the button as if that is where it populated from */
-       }
+        /* TARS in suit animates and moves upwards then appears to descend */
+        /* back into the button as if that is where it populated from */
+      }
       <img
         src={k0d3xSuit}
         alt="K0d3x in a suit"
-        className={`h-100 w-100 absolute bottom-0 transform ${
-          copied ? 'translate-y-100' : 'translate-y-100 opacity-0'
-        }`}
+        className={`h-100 w-100 absolute bottom-0 transform ${copied ? 'translate-y-100' : 'translate-y-100 opacity-0'
+          }`}
         style={{ transition: 'opacity 0.5s ease-out' }}
       />
       {
@@ -70,9 +69,9 @@ const DonateButton = () => {
           /* Donate Button Icon */
           /**********************/
         }
-        <img 
-          src={k0d3x} 
-          alt="K0d3x 8its" 
+        <img
+          src={k0d3x}
+          alt="K0d3x 8its"
           className="h-12 w-12 mr-1 mt-0.5"  // Adjusted size to h-12 and w-12
           style={{ transition: 'opacity 0.2s ease-out', opacity: copied ? 0 : 1 }}
         />
